@@ -3,8 +3,8 @@ require 'pry'
 array = ["mi amas vin", "bonan matenon", "pacon", "ĉu vi parolas esperanton"]
 
 def alphabetize(arr)
+  esp_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   arr.sort_by! do |phrase|
-    esp_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
     a = []
     
     mod = phrase.delete ' '
